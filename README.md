@@ -6,8 +6,14 @@ Before running the first round of the annotation you need to edit the parameter_
 
 ```
 genome= #genome sequence (fasta file or fasta embeded in GFF3 file)
+
 altest=parameter_files/caenorhabditis_elegans.PRJNA13758.WBPS15.mRNA_transcripts.fa,parameter_files/strongyloides_ratti.PRJEB125.WBPS15.mRNA_transcripts.fa #EST/cDNA sequence file in fasta format from an alternate organism
+
 protein=parameter_files/caenorhabditis_elegans.PRJNA13758.WBPS15.protein.fa,parameter_files/strongyloides_ratti.PRJEB125.WBPS15.protein.fa  #protein sequence file in fasta format (i.e. from mutiple organisms)
+
+snaphmm=snap/round0/my-genome.hmm #SNAP HMM file
+
+augustus_species=caenorhabditis
 ```
 
 Following this, you should run the maker_rnd1.sh script
