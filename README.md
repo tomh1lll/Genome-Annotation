@@ -32,10 +32,10 @@ gff3_merge -d round1_master_datastore_index.log
 mkdir -p ../snap/round1
 cd ../snap/round1
 maker2zff -x 0.5 -l 50 -c 0 -e 0 -o 0 -d ../../round1.maker.output/round1_master_datastore_index.log
-fathom ../../round1.maker.output/genome.round1.all.gff genome.dna -gene-stats > gene-stats.log
-fathom ../../round1.maker.output/genome.round1.all.gff genome.dna -validate > validate.log
+fathom genome.ann genome.dna -gene-stats > gene-stats.log
+fathom genome.ann genome.dna -validate > validate.log
 
-fathom ../../round1.maker.output/genome.round1.all.gff genome.dna -categorize 1000 > categorize.log
+fathom genome.ann genome.dna -categorize 1000 > categorize.log
 fathom uni.ann uni.dna -export 1000 -plus > uni-plus.log
 
 mkdir params
@@ -71,8 +71,8 @@ gff3_merge -d round2_master_datastore_index.log
 mkdir -p ../snap/round2
 cd ../snap/round2
 maker2zff -x 0.5 -l 50 -c 0 -e 0 -o 0 -d ../../round2.maker.output/round2_master_datastore_index.log
-fathom ../../round2.maker.output/genome.round2.all.gff genome.dna -gene-stats > gene-stats.log
-fathom ../../round2.maker.output/genome.round2.all.gff genome.dna -validate > validate.log
+fathom genome.ann genome.dna -gene-stats > gene-stats.log
+fathom genome.ann genome.dna -validate > validate.log
 
 fathom ../../round2.maker.output/genome.round2.all.gff genome.dna -categorize 1000 > categorize.log
 fathom uni.ann uni.dna -export 1000 -plus > uni-plus.log
